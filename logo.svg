@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-labelledby="title desc">
+  <title id="title">Manisha Dhar monogram</title>
+  <desc id="desc">A white, yellow, and purple orbital monogram for Manisha Dhar</desc>
+  <rect width="160" height="160" rx="32" fill="#6d43a8"/>
+  <g fill="none" stroke="#fffdf8" stroke-linecap="round">
+    <ellipse cx="80" cy="80" rx="54" ry="23" stroke-width="3" transform="rotate(-28 80 80)"/>
+    <ellipse cx="80" cy="80" rx="54" ry="23" stroke-width="3" transform="rotate(28 80 80)"/>
+  </g>
+  <circle cx="80" cy="80" r="10" fill="#f5d447"/>
+  <text x="80" y="87" fill="#fffdf8" text-anchor="middle" font-family="Arial, sans-serif" font-size="35" font-weight="700" letter-spacing="-3">MD</text>
+</svg>
