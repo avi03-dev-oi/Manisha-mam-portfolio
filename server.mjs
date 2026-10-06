@@ -23,7 +23,7 @@ const server = createServer(async (req, res) => {
     ? 'index.html'
     : pathname === '/manus-routes.json'
       ? 'public/manus-routes.json'
-      : pathname === '/script.js' || pathname.startsWith('/images/')
+      : pathname === '/script.js' || pathname === '/styles.css' || pathname === '/logo.svg' || pathname.startsWith('/images/')
         ? `public/${pathname.replace(/^\/+/, '')}`
       : pathname.replace(/^\/+/, '');
   const safePath = normalize(requestedFile).replace(/^\.\.(?:[\\/]|$)/, '');
