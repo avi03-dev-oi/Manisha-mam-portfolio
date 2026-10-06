@@ -11,6 +11,9 @@ const types = {
   '.js': 'text/javascript; charset=utf-8',
   '.json': 'application/json; charset=utf-8',
   '.svg': 'image/svg+xml',
+  '.png': 'image/png',
+  '.jpg': 'image/jpeg',
+  '.jpeg': 'image/jpeg',
   '.ico': 'image/x-icon'
 };
 
@@ -20,6 +23,8 @@ const server = createServer(async (req, res) => {
     ? 'index.html'
     : pathname === '/manus-routes.json'
       ? 'public/manus-routes.json'
+      : pathname === '/script.js' || pathname.startsWith('/images/')
+        ? `public/${pathname.replace(/^\/+/, '')}`
       : pathname.replace(/^\/+/, '');
   const safePath = normalize(requestedFile).replace(/^\.\.(?:[\\/]|$)/, '');
   const filePath = join(root, safePath);
